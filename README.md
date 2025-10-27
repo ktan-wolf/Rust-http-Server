@@ -112,7 +112,7 @@ Your terminal will print the raw HTTP request that your browser sent.
 
 Each connection is handled in a new thread:
 ```rustt
-hread::spawn(move || {
+thread::spawn(move || {
     handle_connection(stream);
 });
 ```
